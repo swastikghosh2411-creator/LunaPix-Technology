@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LunaPix</title>
+ <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="LunaPix home">
+  <img src="logo.png" alt="" class="nav__logo-img" aria-hidden="true" />
+  <span class="nav__logo-text">LunaPix Technology</span>
+</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+      </ul>
+
+      <a href="#contact" class="nav__cta">Get in touch</a>
+
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__drawer" id="drawer" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#services" class="nav__drawer-link">Services</a></li>
+        <li><a href="#pricing" class="nav__drawer-link">Pricing</a></li>
+        <li><a href="#about" class="nav__drawer-link">About</a></li>
+        <li><a href="#contact" class="nav__drawer-link nav__drawer-link--accent">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--a"></div>
+      <div class="hero__orb hero__orb--b"></div>
+      <div class="hero__orb hero__orb--c"></div>
+      
+    </div>
+
+    <div class="hero__center">
+      <h1 class="hero__wordmark" id="wordmark" aria-label="LUNAPIX">
+        <span class="wm-char" style="--i:0">L</span><span
+              class="wm-char" style="--i:1">U</span><span
+              class="wm-char" style="--i:2">N</span><span
+              class="wm-char" style="--i:3">A</span><span
+            
+              class="wm-char" style="--i:5">P</span><span
+              class="wm-char" style="--i:6">I</span><span
+              class="wm-char" style="--i:7">X</span>
+      </h1>
+     <p class="hero__eyebrow">Web design studio — est. 2026</p>
+       <a href="#contact" class="hero__cta" id="heroCta">
+        Start a project
+        <span class="hero__cta-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+     
+
+  </section>
+
+
+
+  <!-- ===================== SERVICES ===================== -->
+<section class="services" id="services" aria-labelledby="servicesTitle">
+
+  <!-- Marquee ticker -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Restaurants</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Cafés</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Bakeries</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Cloud Kitchens</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Clothing Brands</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Gyms</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Travel Businesses</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Tuition Centres</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Restaurants</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Cafés</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Bakeries</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Cloud Kitchens</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Clothing Brands</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Gyms</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Travel Businesses</span>
+      <span class="marquee__sep">&#10022;</span>
+      <span class="marquee__item">Tuition Centres</span>
+      <span class="marquee__sep">&#10022;</span>
+    </div>
+  </div>
+
+  <!-- Section header -->
+  <div class="services__head">
+    <div class="services__inner">
+      <p class="services__overline" id="servicesTitle">Industries We Serve</p>
+      <h2 class="services__title">
+        Built for the<br/>businesses around you.
+      </h2>
+      <p class="services__sub">
+        Every business type has its own rhythm. We know what each one needs online — and we build exactly that.
+      </p>
+    </div>
+  </div>
+
+  <!-- Industry grid -->
+  <div class="services__grid-wrap">
+    <div class="services__inner">
+      <ul class="services__grid" role="list">
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">01</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Restaurants</h3>
+            <p class="ind-card__desc">Menu pages, reservation flows, and a first impression that makes people want to visit before they've tasted anything.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">02</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Cafés</h3>
+            <p class="ind-card__desc">Atmosphere-first design. Warm, intentional layouts that reflect the mood of the space before a customer walks in.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">03</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Bakeries</h3>
+            <p class="ind-card__desc">Product-forward pages that showcase what you make. Online ordering, pickup scheduling, and a brand as careful as your craft.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">04</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Cloud Kitchens</h3>
+            <p class="ind-card__desc">No physical storefront means your website is your only first impression. We make sure it earns the order.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">05</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Clothing Brands</h3>
+            <p class="ind-card__desc">Editorial layouts, lookbook pages, and e-commerce that makes browsing feel like shopping in a well-designed store.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">06</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Gyms</h3>
+            <p class="ind-card__desc">Class schedules, membership pages, and a site that communicates the discipline and energy of the facility.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">07</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Travel Businesses</h3>
+            <p class="ind-card__desc">Itinerary showcases, inquiry forms, and destination pages that turn curiosity into a booking conversation.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+        <li class="ind-card" data-scroll>
+          <span class="ind-card__num">08</span>
+          <div class="ind-card__body">
+            <h3 class="ind-card__name">Tuition Centres</h3>
+            <p class="ind-card__desc">Course listings, faculty pages, and trust-building design that helps parents make a confident decision.</p>
+          </div>
+          <div class="ind-card__line" aria-hidden="true"></div>
+        </li>
+
+      </ul>
+
+      <!-- Bottom CTA row -->
+      <div class="services__cta-row" data-scroll>
+        <p class="services__cta-text">Don't see your industry? We've worked with retail, clinics, event spaces, and more.</p>
+        <a href="#contact" class="services__cta-btn">
+          Talk to us
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ===================== PRICING =====================  -->
+
+<section class="pricing" id="pricing" aria-labelledby="pricingTitle">
+  <div class="pricing__inner">
+
+    <div class="pricing__head">
+      <p class="pricing__overline" id="pricingTitle">
+        <span class="pricing__dot"></span>Pricing
+      </p>
+      <h2 class="pricing__title">Straightforward pricing.<br/>No surprises.</h2>
+      <p class="pricing__sub">Every plan includes design, development, and launch. Pick what fits where you are right now.</p>
+    </div>
+
+    <!-- BUILD PLANS — editorial rows -->
+    <div class="plan-list">
+
+      <article class="plan-row" data-scroll>
+        <div class="plan-row__index">01</div>
+        <div class="plan-row__main">
+          <h3 class="plan-row__name">Starter</h3>
+          <p class="plan-row__pitch">For new and growing local businesses that need a clean, professional website to get started.</p>
+          <ul class="plan-row__feats">
+            <li>Up to 5 custom pages</li>
+            <li>Responsive design</li>
+            <li>Contact &amp; WhatsApp integration</li>
+            <li>Basic SEO setup</li>
+            <li>1 year domain &amp; hosting</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <span class="plan-row__delivery">Delivery in 5–7 working days</span>
+        </div>
+        <div class="plan-row__price">
+          <span class="plan-row__from">starting at</span>
+          <span class="plan-row__amount">₹6,999</span>
+          <a href="#contact" class="plan-row__cta">Get started <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="plan-row plan-row--chosen" data-scroll>
+        <div class="plan-row__index">02</div>
+        <div class="plan-row__main">
+          <h3 class="plan-row__name">Growth <span class="plan-row__tag">Most chosen</span></h3>
+          <p class="plan-row__pitch">Everything in Starter, plus premium design and features for businesses ready to stand out.</p>
+          <ul class="plan-row__feats">
+            <li>Up to 10 custom pages</li>
+            <li>Premium UI/UX design</li>
+            <li>Smooth animations</li>
+            <li>Gallery &amp; testimonials sections</li>
+            <li>Enhanced SEO setup</li>
+            <li>4 rounds of revisions</li>
+          </ul>
+          <span class="plan-row__delivery">Delivery in 7–12 working days</span>
+        </div>
+        <div class="plan-row__price">
+          <span class="plan-row__from">starting at</span>
+          <span class="plan-row__amount">₹14,999</span>
+          <a href="#contact" class="plan-row__cta plan-row__cta--solid">Get started <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="plan-row" data-scroll>
+        <div class="plan-row__index">03</div>
+        <div class="plan-row__main">
+          <h3 class="plan-row__name">Premium</h3>
+          <p class="plan-row__pitch">Everything in Growth, plus advanced features, custom systems, and full business integration.</p>
+          <ul class="plan-row__feats">
+            <li>Admin dashboard</li>
+            <li>Online ordering / reservations</li>
+            <li>Payment gateway integration</li>
+            <li>Advanced SEO configuration</li>
+            <li>Priority support</li>
+            <li>Custom integrations</li>
+          </ul>
+          <span class="plan-row__delivery">Delivery in 2–4 weeks</span>
+        </div>
+        <div class="plan-row__price">
+          <span class="plan-row__from">starting at</span>
+          <span class="plan-row__amount">₹29,999</span>
+          <a href="#contact" class="plan-row__cta">Get started <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CARE PLANS — compact editorial list -->
+    <div class="care-list-wrap">
+      <p class="care-list__label">Website Care Plans</p>
+      <p class="care-list__sub">Keep your website healthy, secure, and up to date every month.</p>
+
+      <div class="care-list">
+        <div class="care-row" data-scroll>
+          <span class="care-row__name">Essential Care</span>
+          <span class="care-row__desc">Monitoring, security updates, monthly backup, 30 min content updates</span>
+          <span class="care-row__price">₹499<span class="care-row__per">/mo</span></span>
+        </div>
+        <div class="care-row" data-scroll>
+          <span class="care-row__name">Growth Care</span>
+          <span class="care-row__desc">Everything in Essential, plus priority support, SEO health checks, 1 hr updates</span>
+          <span class="care-row__price">₹999<span class="care-row__per">/mo</span></span>
+        </div>
+        <div class="care-row" data-scroll>
+          <span class="care-row__name">Premium Care</span>
+          <span class="care-row__desc">Everything in Growth, plus performance work, priority response, quarterly reviews</span>
+          <span class="care-row__price">₹1,999<span class="care-row__per">/mo</span></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="pricing__note">
+      All prices are starting rates. Final cost depends on scope and requirements.
+      <a href="#contact" class="pricing__note-link">Talk to us</a> for a custom quote.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- about section  -->
+ <section class="about" id="about" aria-labelledby="aboutTitle">
+  <div class="about__inner">
+
+    <div class="about__head">
+      <p class="about__overline" id="aboutTitle">
+        <span class="about__dot"></span>About
+      </p>
+      <h2 class="about__title">Two people.<br/>One standard.</h2>
+      <p class="about__sub">
+       LunaPix Technology is a web design and development studio that helps local businesses build a stronger digital presence. We create modern, high-performance websites that inspire trust, attract customers, and support long-term business growth. Every project is designed with performance, usability, and your business goals in mind.
+      </p>
+    </div>
+
+    <div class="founder-grid">
+
+      <article class="founder" data-scroll>
+        <div class="founder__media">
+          <img src="swastik.png" alt="Portrait of Swastik Ghosh" class="founder__img" />
+        </div>
+        <div class="founder__info">
+          
+          <h3 class="founder__name">Swastik Ghosh</h3>
+          <p class="founder__role">Co-Founder &amp; Operations Head</p>
+          <p class="founder__bio">
+            Leads business operations, client communication, and project coordination — making sure every project moves smoothly from planning to launch.
+          </p>
+          
+        </div>
+      </article>
+
+      <div class="founder-grid__divider" aria-hidden="true"></div>
+
+      <article class="founder" data-scroll>
+        <div class="founder__media">
+          <img src="subhayoni.png" alt="Portrait of Subhayoni Chandra" class="founder__img" />
+        </div>
+        <div class="founder__info">
+         
+          <h3 class="founder__name">Subhayoni Chandra</h3>
+          <p class="founder__role">Co-Founder &amp; Technical Lead</p>
+          <p class="founder__bio">
+            Leads technical execution — modern web development, responsive design, performance optimization, and reliable delivery on every project.
+          </p>
+          
+        </div>
+      </article>
+
+    </div>
+
+    <p class="about__note">
+      Based in India, working with businesses everywhere.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="contact" id="contact" aria-labelledby="contactTitle">
+  <div class="contact__inner">
+
+    <div class="contact__head">
+      <p class="contact__overline" id="contactTitle">
+        <span class="contact__dot"></span>Contact Us
+      </p>
+      <h2 class="contact__title">Let's build your<br/>business online.</h2>
+    </div>
+
+    <div class="contact__grid">
+
+      <!-- FORM -->
+      <div class="contact__form-col" data-scroll>
+        <p class="contact__label">Send us a message</p>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/maqrdbeo"
+  method="POST">
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="Full Name" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="businessName">Business Name</label>
+              <input type="text" id="businessName" name="Business Name" />
+            </div>
+          </div>
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="Phone Number" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="Email Address" required />
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="businessType">Business Type</label>
+            <input type="text" id="businessType" name="Business Type" placeholder="e.g. Restaurant, Café, Clothing brand" />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-form__submit">
+            <span class="btn-text">Send Inquiry</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+        </form>
+      </div>
+
+      <!-- SIDE INFO -->
+      <div class="contact__side" data-scroll>
+
+        <div class="contact-card">
+  <p class="contact-card__label">Prefer a quick chat?</p>
+  <p class="contact-card__desc">
+    Chat with us on WhatsApp — usually the fastest way to reach us.
+  </p>
+
+  <a
+   href="https://wa.me/917003552642?text=Hi%20LunaPix%2C%20I'm%20interested%20in%20getting%20a%20website%20for%20my%20business."
+  target="_blank"
+  rel="noopener"
+  class="contact-card__whatsapp"
+>
+    Chat on WhatsApp
+    <span aria-hidden="true">→</span>
+  </a>
+</div>
+
+        <div class="contact-info">
+          <div class="contact-info__row">
+            <span class="contact-info__label">Email</span>
+            <a href="mailto:lunapixtechnology@gmail.com" class="contact-info__value">lunapixtechnology@gmail.com</a>
+          </div>
+          <div class="contact-info__row">
+            <span class="contact-info__label">Call</span>
+            <a href="tel:+917003552642" class="contact-info__value">+91 70035 52642</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- finally, the footer section of the website is defined, which includes branding, quick links, services, and contact information. The footer is structured to provide easy navigation and access to important information for users. -->
+
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+
+    <div class="footer__top">
+
+      <!-- Brand column -->
+      <div class="footer__brand">
+        <a href="#" class="footer__logo" aria-label="LunaPix home">
+          <img src="logo.png" alt="LunaPix" class="footer__logo-img" />
+          <span class="footer__logo-text">LunaPix</span>
+        </a>
+        <p class="footer__tagline">Web design studio — est. 2026</p>
+
+        <div class="footer__social">
+          <a href="https://www.instagram.com/lunapixtechnology/" target="_blank" rel="noopener" aria-label="LunaPix on Instagram" class="footer__social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/lunapix-technology/" target="_blank" rel="noopener" aria-label="LunaPix on LinkedIn" class="footer__social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="7.5" y1="10.5" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="7.5" cy="7.3" r="0.9" fill="currentColor"/>
+              <path d="M11 16.5v-4c0-1.3.9-2.3 2.2-2.3 1.3 0 2.1 1 2.1 2.3v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="mailto:lunapixtechnology@gmail.com" aria-label="Email LunaPix" class="footer__social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer__col">
+        <p class="footer__col-label">Quick Links</p>
+        <ul class="footer__links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer__col">
+        <p class="footer__col-label">Services</p>
+        <ul class="footer__links" role="list">
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#pricing">Website Care Plans</a></li>
+          <li><a href="#contact">Custom Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__col">
+        <p class="footer__col-label">Contact</p>
+        <ul class="footer__links" role="list">
+          <li><a href="mailto:lunapixtechnology@gmail.com">lunapixtechnology@gmail.com</a></li>
+          <li><a href="tel:+917003552642">+91 70035 52642</a></li>
+          <li class="footer__address">Ruby, Kolkata</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">Copyright &copy; 2026 LunaPix. All Rights Reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
